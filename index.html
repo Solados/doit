@@ -3,21 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/styles.css">
+    <link rel="stylesheet" href="/styles.css">
     <link rel="manifest" href="/manifest.json">
     <title>Todo List</title>
 </head>
 <body>
-    <h1>Todo List</h1>
-    <ul id="todoList"></ul>
-    <input type="text" id="newTodo" placeholder="Add a new todo...">
-    <button onclick="addTodo()">Add Todo</button>
-
-
-
-    <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/service-worker.js')}
-    </script>
+    <div class="container">
+        <div class="todo-list">
+            <h2>To-Do List <!--<img src="/assets">--></h2>
+                      <!--Image tag is a place holder-->
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add your text">
+                <button>Add</button>
+            </div>
+            <ul id="list-container">
+                <li>Task 1</li>
+                <li>Task 2</li>
+                <li>Task 3</li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html> 
