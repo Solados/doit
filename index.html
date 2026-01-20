@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="/styles.css">
     <link rel="manifest" href="/manifest.json">
     <title>Todo List</title>
+    <link rel="manifest" href="manifest.json">
 </head>
 <body>
     <div class="container">
@@ -13,32 +14,16 @@
             <h2>To-Do List <!--<img src="/assets">--></h2>
                       <!--Image tag is a place holder-->
             <div class="row">
-                <input type="text" id="input-box" placeholder="Add your text">
-                <button>Add</button>
+                <input type="text" id="input-box" placeholder="Add your text" 
+                  onkeydown="if(event.key === 'Enter'){ addTask(); }"></input>
+                <button onclick="addTask()">Add</button>
+                
             </div>
             <ul id="list-container">
-               
             </ul>
         </div>
     </div>
-    <script>
-        const inputBox = document.getElementById("input-box");
-        const addButton = document.querySelector("button");
-        const listContainer = document.getElementById("list-container");
 
-        addButton.addEventListener("click", function() {
-            const taskText = inputBox.value.trim();
-            if (taskText !== "") {
-                const listItem = document.createElement("li");
-                listItem.textContent = taskText;
-                listContainer.appendChild(listItem);
-                inputBox.value = "";
-            }
-        });
-    </script>
-     <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/service-worker.js')}
-    </script>
+<script src="script.js"></script>
 </body>
 </html> 

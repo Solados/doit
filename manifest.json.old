@@ -1,0 +1,11 @@
+{
+    "name": "todo",
+    "short_name": "todo",
+    "start_url": "index.html",
+    "display": "fullscreen",
+    "icons": [
+    ],
+    "theme_color": "#000000",
+    "background_color": "#ffffff",
+    "orientation": "portrait"
+}
