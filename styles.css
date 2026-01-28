@@ -7,7 +7,7 @@
 .container{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(135deg, red, blue);
+    background: linear-gradient(135deg, #890000, #000089);
     padding: 10px;
 }
 .todo-list{
@@ -68,7 +68,7 @@ button{
 ul li{
     color: white;
     list-style: none;
-    font-size: 32px;
+    font-size: 1.8rem;
     padding: 12px 8px 12px 50px;
     user-select: none;
     cursor: pointer;
